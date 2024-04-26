@@ -1,0 +1,181 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace T_Or
+{
+    public static class Ext_ListByte__Do
+    {
+        /////////////////////////////////////////////
+        [DllImport("user32.dll")]
+        private static extern short GetAsyncKeyState(int vKey);
+        [DllImport("user32.dll")]
+        private static extern short GetKeyState(int nVirtKey);
+        [DllImport("user32.dll")]
+        private static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
+        private static void DownKey(byte _bVk) { keybd_event(_bVk, 0, 0x0000, 0); }
+        private static void UpKey(byte _bVk) { keybd_event(_bVk, 0, 0x0002, 0); }
+        /////////////////////////////////////////////
+        [DllImport("User32.Dll")]
+        private static extern bool GetCursorPos(out MouseXYStruct lpPoint);
+        [StructLayout(LayoutKind.Sequential)]
+        public struct MouseXYStruct { public int X; public int Y; }
+        private static MouseXYStruct p__MouseXYStruct = new MouseXYStruct();
+        public static MouseXYStruct p_MouseXYStruct { get { GetCursorPos(out p__MouseXYStruct); return p__MouseXYStruct; } }
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        [DllImport("User32.Dll")]
+        private static extern long SetCursorPos(int x, int y);
+        private static void SetMouseZeroX()
+        {
+            GetCursorPos(out p__MouseXYStruct);
+            int _X = 0;
+            int _Y = p__MouseXYStruct.Y;
+            SetCursorPos(_X, _Y);
+        }
+        private static void SetMouseZeroY()
+        {
+            GetCursorPos(out p__MouseXYStruct);
+            int _X = p__MouseXYStruct.X;
+            int _Y = 0;
+            SetCursorPos(_X, _Y);
+        }
+        private static void SetMouseRegardingX(int x)
+        {
+            GetCursorPos(out p__MouseXYStruct);
+            int _X = p__MouseXYStruct.X + x;
+            if (_X < 0) _X = 0;
+            int _Y = p__MouseXYStruct.Y;
+            SetCursorPos(_X, _Y);
+            ;
+        }
+        private static void SetMouseRegardingY(int y)
+        {
+            GetCursorPos(out p__MouseXYStruct);
+            int _X = p__MouseXYStruct.X;
+            int _Y = p__MouseXYStruct.Y + y;
+            if (_Y < 0) _Y = 0;
+            SetCursorPos(_X, _Y);
+        }
+        //public Mouse Set_CursorPos(XY _XY) { SetCursorPos(_XY.X, _XY.Y); return this; }
+
+        public static List<byte> Do1(this List<byte> _this)
+        {
+
+        }
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        public static List<byte> Do(this List<byte> _this)
+        {
+            List<byte> _VirtualKeyKodeS = new List<byte> { 0x01, 0x02, 0x04, 0x08, 0x09, 0x0D, 0x10, 0x11, 0x12, 0x13, 0x14, 0x1B, 0x20, 0x21, 0x22, 0x23, 0x24, 0x25, 0x26, 0x27, 0x28, 0x2D, 0x2E, 0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x41, 0x42, 0x43, 0x44, 0x45, 0x46, 0x47, 0x48, 0x49, 0x4A, 0x4B, 0x4C, 0x4D, 0x4E, 0x4F, 0x50, 0x51, 0x52, 0x53, 0x54, 0x55, 0x56, 0x57, 0x58, 0x59, 0x5A, 0x5B, 0x5B, 0x5C, 0x5D, 0x60, 0x61, 0x62, 0x63, 0x64, 0x65, 0x66, 0x67, 0x68, 0x69, 0x6A, 0x6B, 0x6D, 0x6E, 0x6F, 0x70, 0x71, 0x72, 0x73, 0x74, 0x75, 0x76, 0x77, 0x78, 0x79, 0x7A, 0x7B, 0x90, 0x91, 0x9A, 0xBA, 0xBB, 0xBC, 0xBD, 0xBE, 0xBF, 0xC0, 0xDB, 0xDC, 0xDD, 0xDE };
+            int Counter = 0; byte AH = 0; byte AL = 0;
+            while (Counter < _this.Count())
+            {
+                AH = _this[Counter];
+                if (Counter != _this.Count() - 1) { AL = _this[Counter + 1]; } else { AL = 0; }
+                //В чем дело.//Команда одиночного простого нажатия клавиши составляет 8 бит Вот его обработка
+                if (_VirtualKeyKodeS.Contains(AH))
+                {
+                    DownKey(AH);
+                    System.Threading.Thread.Sleep(25);
+                    UpKey(AH);
+                    System.Threading.Thread.Sleep(25);
+                }
+                //None    0 Нет нажатых клавиш. - так в таблицах майкрософта
+                //https://learn.microsoft.com/ru-ru/dotnet/api/system.windows.forms.keys?view=windowsdesktop-8.0
+                // Но у нас не как у инвалидов из Майка РосСофта.
+                // Мы на эти же коды вешаем дополнительные команды..
+                ////////////////////////////////////////////////////
+                if (AH == 0x00)
+                {
+                    switch (AL)
+                    {
+                        //////////////////////////////////////////////////
+                        // Перечень 16 битных комианд.
+                        // 0x00 0x01 MouseX=0               //  AH   AL
+                        // 0x00 0x02 MouseX+=1              // 0x00 0x09 MouseX-=1
+                        // 0x00 0x03 MouseX+=5              // 0x00 0x0A MouseX-=5
+                        // 0x00 0x04 MouseX+=25             // 0x00 0x0B MouseX-=25
+                        // 0x00 0x05 MouseX+=50             // 0x00 0x0C MouseX-=50
+                        // 0x00 0x06 MouseX+=100            // 0x00 0x0D MouseX-=100
+                        // 0x00 0x07 MouseX+=250            // 0x00 0x0E MouseX-=250
+                        // 0x00 0x08 MouseX+=500            // 0x00 0x0F MouseX-=500
+                        //////////////////////////////////////////////////
+                        case 0x01: SetMouseZeroX(); Counter++; break;
+                        case 0x02: SetMouseRegardingX(1); Counter++; break;
+                        case 0x09: SetMouseRegardingX(-1); Counter++; break;
+                        case 0x03: SetMouseRegardingX(5); Counter++; break;
+                        case 0x0A: SetMouseRegardingX(-5); Counter++; break;
+                        case 0x04: SetMouseRegardingX(25); Counter++; break;
+                        case 0x0B: SetMouseRegardingX(-25); Counter++; break;
+                        case 0x05: SetMouseRegardingX(50); Counter++; break;
+                        case 0x0C: SetMouseRegardingX(-50); Counter++; break;
+                        case 0x06: SetMouseRegardingX(100); Counter++; break;
+                        case 0x0D: SetMouseRegardingX(-100); Counter++; break;
+                        case 0x07: SetMouseRegardingX(250); Counter++; break;
+                        case 0x0E: SetMouseRegardingX(-250); Counter++; break;
+                        case 0x08: SetMouseRegardingX(500); Counter++; break;
+                        case 0x0F: SetMouseRegardingX(-500); Counter++; break;
+                        //////////////////////////////////////////////////
+                        // Перечень 16 битных комианд.
+                        // 0x00 0x11 MouseY=0     //  AH   AL
+                        // 0x00 0x12 MouseY+=1    // 0x00 0x19 MouseY-=1
+                        // 0x00 0x13 MouseY+=5    // 0x00 0x1A MouseY-=5
+                        // 0x00 0x14 MouseY+=25   // 0x00 0x1B MouseY-=25
+                        // 0x00 0x15 MouseY+=50   // 0x00 0x1C MouseY-=50
+                        // 0x00 0x16 MouseY+=100  // 0x00 0x1D MouseY-=100
+                        // 0x00 0x17 MouseY+=250  // 0x00 0x1E MouseY-=250
+                        // 0x00 0x18 MouseY+=500  // 0x00 0x1F MouseY-=500
+                        //////////////////////////////////////////////////
+                        case 0x11: SetMouseZeroY(); Counter++; break;
+                        case 0x12: SetMouseRegardingY(1); Counter++; break;
+                        case 0x19: SetMouseRegardingY(-1); Counter++; break;
+                        case 0x13: SetMouseRegardingY(5); Counter++; break;
+                        case 0x1A: SetMouseRegardingY(-5); Counter++; break;
+                        case 0x14: SetMouseRegardingY(25); Counter++; break;
+                        case 0x1B: SetMouseRegardingY(-25); Counter++; break;
+                        case 0x15: SetMouseRegardingY(50); Counter++; break;
+                        case 0x1C: SetMouseRegardingY(-50); Counter++; break;
+                        case 0x16: SetMouseRegardingY(100); Counter++; break;
+                        case 0x1D: SetMouseRegardingY(-100); Counter++; break;
+                        case 0x17: SetMouseRegardingY(250); Counter++; break;
+                        case 0x1E: SetMouseRegardingY(-250); Counter++; break;
+                        case 0x18: SetMouseRegardingY(500); Counter++; break;
+                        case 0x1F: SetMouseRegardingY(-500); Counter++; break;
+                        ///////////////////////////////////////////////////
+                        case 0x21: System.Threading.Thread.Sleep(25); Counter++; break;
+                        case 0x22: System.Threading.Thread.Sleep(50); Counter++; break;
+                        case 0x23: System.Threading.Thread.Sleep(100); Counter++; break;
+                        case 0x24: System.Threading.Thread.Sleep(500); Counter++; break;
+                        case 0x25: System.Threading.Thread.Sleep(1000); Counter++; break;
+                        case 0x26: System.Threading.Thread.Sleep(5000); Counter++; break;
+                        ///////////////////////////////////////////////////
+                        default: break;
+                    }
+                }// 0xF1 опустить клавишу// 0xF2 поднять клавишу - этот момент спорный, но клавиши 0xF1,0xF2 я не видел.
+                else if (AH == 0xF1)// 0xF1 опустить клавишу
+                {
+                    if (_VirtualKeyKodeS.Contains(AL))
+                    {
+                        ;
+                        DownKey(AL);
+                        System.Threading.Thread.Sleep(25);
+                        Counter++;
+                    }
+                }
+                else if (AH == 0xF2)// 0xF2 поднять клавишу - этот момент спорный, но клавиши 0xF1,0xF2 я не видел.
+                {
+                    if (_VirtualKeyKodeS.Contains(AL))
+                    {
+                        UpKey(AL);
+                        System.Threading.Thread.Sleep(25);
+                        Counter++;
+                    }
+                }
+                Counter++;
+            }
+            return _this;
+        }
+    }
+}

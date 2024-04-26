@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TorNado
+{
+    public class Sleep500 : IVCommander
+    {
+        private const int p__int = 500;
+        private const string p__str = "Sleep500";
+        public Sleep500() { }
+        public System.Byte Get_nVirtKey() { return 0; }
+        System.Byte IVCommander.Get_nVirtKey() { return 0; }
+        public System.String Get_Str() { return p__str; }
+        System.String IVCommander.Get_Str() { return p__str; }
+        public IVCommander Up() { System.Threading.Thread.Sleep(p__int); return this; }
+        public IVCommander Down() { return this; }
+        public System.Boolean Is() { return false; }
+        ///////////////////////////////////////////////////////////////////////////
+        public object New(){ return new Sleep500(); }
+        object INewEable.New() { return new Sleep500(); }
+        public object Clone() { return new Sleep500(); }
+        object ICloneable.Clone() { return new Sleep500(); }
+    }
+}

@@ -151,6 +151,10 @@ namespace T_Or
         public static List<byte> Sleep1000(this List<byte> _this) => _this._(0x00, 0x00, 0x01, 0x15);
         public static List<byte> Sleep5000(this List<byte> _this) => _this._(0x00, 0x00, 0x01, 0x16);
         //////////////////////////////////////////////////
+        public static List<byte> WinB(this List<byte> _this) => _this._(0x00, 0x00, 0x01, 0x17);
+        public static List<byte> CtrlN(this List<byte> _this) => _this._(0x00, 0x00, 0x01, 0x18);
+
+        ///////////////////////////////////////////////////////////////////////////////////////
         public static List<byte> Do(this List<byte> _this)
         {
             int Counter = 0;
@@ -310,6 +314,9 @@ namespace T_Or
                                             case 0x14: System.Threading.Thread.Sleep(500); break; new List<byte>().Sleep500();
                                             case 0x15: System.Threading.Thread.Sleep(1000); break; new List<byte>().Sleep1000();
                                             case 0x16: System.Threading.Thread.Sleep(5000); break; new List<byte>().Sleep5000();
+                                            case 0x17: new Process().Set_NirCmd("sendkeypress 0x5B+b"); break; new List<byte>().WinB();
+                                            case 0x18: new Process().Set_NirCmd("sendkeypress 0x11+n"); break; new List<byte>().Ctrl();
+
                                         }
                                         break;
                                 }

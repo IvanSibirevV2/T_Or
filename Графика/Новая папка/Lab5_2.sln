@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab5_2", "Lab5_2.csproj", "{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphLL", "..\GraphLL\GraphLL.csproj", "{96A190DA-27AD-4035-B514-CFC18A68A42C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_Or", "..\..\T_Or_EXE\T_Or\T_Or.csproj", "{9C209730-E489-4E73-A06E-84F112600BD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A190DA-27AD-4035-B514-CFC18A68A42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A190DA-27AD-4035-B514-CFC18A68A42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A190DA-27AD-4035-B514-CFC18A68A42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A190DA-27AD-4035-B514-CFC18A68A42C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C209730-E489-4E73-A06E-84F112600BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C209730-E489-4E73-A06E-84F112600BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C209730-E489-4E73-A06E-84F112600BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C209730-E489-4E73-A06E-84F112600BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C42397AB-B3EB-4E84-818B-8517D482F0F5}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C209730-E489-4E73-A06E-84F112600BD4}|..\\..\\T_Or_EXE\\T_Or\\T_Or.csproj|c:\\d\\github\\githuboll\\t_or\\t_or_exe\\t_or\\ext_process.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C209730-E489-4E73-A06E-84F112600BD4}|..\\..\\T_Or_EXE\\T_Or\\T_Or.csproj|c:\\d\\github\\githuboll\\t_or\\t_or_exe\\t_or\\ext_listbyte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96A190DA-27AD-4035-B514-CFC18A68A42C}|..\\GraphLL\\GraphLL.csproj|c:\\d\\github\\githuboll\\t_or\\\u0433\u0440\u0430\u0444\u0438\u043A\u0430\\graphll\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96A190DA-27AD-4035-B514-CFC18A68A42C}|..\\GraphLL\\GraphLL.csproj|c:\\d\\github\\githuboll\\t_or\\\u0433\u0440\u0430\u0444\u0438\u043A\u0430\\graphll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}|Lab5_2.csproj|C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}|Lab5_2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}|Lab5_2.csproj|C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}|Lab5_2.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|GraphLL||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}|Lab5_2.csproj|C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}|Lab5_2.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}|Lab5_2.csproj|C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8DCCA04-C0C3-4DD5-9D70-3C5CD2C4147A}|Lab5_2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ext_Process.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\T_Or\\T_Or_EXE\\T_Or\\Ext_Process.cs",
+              "RelativeDocumentMoniker": "..\\..\\T_Or_EXE\\T_Or\\Ext_Process.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\T_Or\\T_Or_EXE\\T_Or\\Ext_Process.cs",
+              "RelativeToolTip": "..\\..\\T_Or_EXE\\T_Or\\Ext_Process.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T12:16:23.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ext_ListByte.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\T_Or\\T_Or_EXE\\T_Or\\Ext_ListByte.cs",
+              "RelativeDocumentMoniker": "..\\..\\T_Or_EXE\\T_Or\\Ext_ListByte.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\T_Or\\T_Or_EXE\\T_Or\\Ext_ListByte.cs",
+              "RelativeToolTip": "..\\..\\T_Or_EXE\\T_Or\\Ext_ListByte.cs",
+              "ViewState": "AQIAAAUBAAAAAAAAAAAAALAAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T12:15:18.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\GraphLL\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\GraphLL\\Class1.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\GraphLL\\Class1.cs",
+              "RelativeToolTip": "..\\GraphLL\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T11:54:03.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\GraphLL\\Program.cs",
+              "RelativeDocumentMoniker": "..\\GraphLL\\Program.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\GraphLL\\Program.cs",
+              "RelativeToolTip": "..\\GraphLL\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:48:34.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AQIAAMwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:41:26.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAD4vxYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T11:12:38.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GraphLL",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\GraphLL\\GraphLL.csproj",
+              "RelativeDocumentMoniker": "..\\GraphLL\\GraphLL.csproj",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\GraphLL\\GraphLL.csproj",
+              "RelativeToolTip": "..\\GraphLL\\GraphLL.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-02T11:16:28.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:41:19.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\D\\GitHub\\GitHubOll\\T_Or\\\u0413\u0440\u0430\u0444\u0438\u043A\u0430\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:40:59.906Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

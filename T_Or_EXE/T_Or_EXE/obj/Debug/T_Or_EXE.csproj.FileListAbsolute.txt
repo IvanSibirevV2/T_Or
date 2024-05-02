@@ -1,0 +1,12 @@
+C:\D\GitHub\GitHubOll\T_Or\T_Or_EXE\T_Or_EXE\bin\Debug\T_Or_EXE.exe.config
+C:\D\GitHub\GitHubOll\T_Or\T_Or_EXE\T_Or_EXE\bin\Debug\T_Or_EXE.exe
+C:\D\GitHub\GitHubOll\T_Or\T_Or_EXE\T_Or_EXE\bin\Debug\T_Or_EXE.pdb
+C:\D\GitHub\GitHubOll\T_Or\T_Or_EXE\T_Or_EXE\bin\Debug\T_Or.dll
+C:\D\GitHub\GitHubOll\T_Or\T_Or_EXE\T_Or_EXE\bin\Debug\ArgeCode.dll
+C:\D\GitHub\GitHubOll\T_Or\T_Or_EXE\T_Or_EXE\bin\Debug\T_Or.pdb
+C:\D\GitHub\GitHubOll\T_Or\T_Or_EXE\T_Or_EXE\bin\Debug\ArgeCode.pdb
+C:\D\GitHub\GitHubOll\T_Or\T_Or_EXE\T_Or_EXE\obj\Debug\T_Or_EXE.csproj.AssemblyReference.cache
+C:\D\GitHub\GitHubOll\T_Or\T_Or_EXE\T_Or_EXE\obj\Debug\T_Or_EXE.csproj.CoreCompileInputs.cache
+C:\D\GitHub\GitHubOll\T_Or\T_Or_EXE\T_Or_EXE\obj\Debug\T_Or_EXE.csproj.Up2Date
+C:\D\GitHub\GitHubOll\T_Or\T_Or_EXE\T_Or_EXE\obj\Debug\T_Or_EXE.exe
+C:\D\GitHub\GitHubOll\T_Or\T_Or_EXE\T_Or_EXE\obj\Debug\T_Or_EXE.pdb

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>T_Or</id>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <authors>SibNout2023</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://github.com/IvanSibirevV2/T_Or</projectUrl>
@@ -12,7 +12,7 @@
     <tags>C# CMD User NirCmd</tags>
     <dependencies>
       <group targetFramework=".NETStandard4.8">
-        <dependency id="ArgeCode" version="0.0.10" />
+        <dependency id="ArgeCode" version="0.0.11" />
       </group>
     </dependencies>
   </metadata>
@@ -20,6 +20,5 @@
     <file src="../../../../T_Or_EXE/T_Or/bin/Debug/T_Or.dll" target="lib\net48" />
     <file src="../../../../T_Or_EXE/T_Or/bin/Debug/T_Or.pdb" target="lib\net48" />    
     <file src=".\USSSR.png" target="" />   
-    <file src="../../../../T_Or_EXE/T_Or/bin/Debug/nircmd.exe" target="lib\net48" /> 
 </files>
 </package>

@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.CMD;
+
 
 namespace T_Or
 {
@@ -155,8 +157,26 @@ namespace T_Or
         public static List<byte> CtrlN(this List<byte> _this) => _this._(0x00, 0x00, 0x01, 0x18);
 
         ///////////////////////////////////////////////////////////////////////////////////////
+        public static System.String Add(this System.String _this, System.String _str)
+            => _this + _str;
+        public static System.String NR(this System.String _this)
+            => _this.Add("\r\n");
+
         public static List<byte> Do(this List<byte> _this)
         {
+
+            if (!System.IO.File.Exists("nircmd.exe")) ""
+                .Set(a => "Требуемый Компонент не найден. Начинаю дозагрузку...".WriteLine())
+                .Set(a => "Источник https://github.com/IvanSibirevV2/HowTo_NirCmd.git".WriteLine())
+                .Set(a => "Буду скачивать nircmd.exe".WriteLine())
+                .Add("ECHO %cd%").NR()
+                .Add(@"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -command ""git clone --depth 1 https://github.com/IvanSibirevV2/HowTo_NirCmd.git;exit"" ").NR()
+                .Execute_CMDoor_V0().WriteLine().Get(a => "")
+                .Add("del nircmd.exe").NR()
+                .Add(@"copy HowTo_NirCmd\NirCmd\nircmd.exe nircmd.exe").NR()
+                .Add("rmdir HowTo_NirCmd /s /q").NR()
+                .Execute_CMDoor_V0().WriteLine()
+            ;
             int Counter = 0;
             while (Counter < _this.Count())
             {
@@ -316,7 +336,6 @@ namespace T_Or
                                             case 0x16: System.Threading.Thread.Sleep(5000); break; new List<byte>().Sleep5000();
                                             case 0x17: new Process().Set_NirCmd("sendkeypress 0x5B+b"); break; new List<byte>().WinB();
                                             case 0x18: new Process().Set_NirCmd("sendkeypress 0x11+n"); break; new List<byte>().Ctrl();
-
                                         }
                                         break;
                                 }
